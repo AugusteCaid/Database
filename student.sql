@@ -78,4 +78,18 @@ INSERT INTO `Students Languages` (`IDSL`, `Student ID`, `Language ID`) VALUES (N
 ​
 
 
-/*========================= Exo 1 ================================*/
+/*========================= Exo ================================*/
+
+/*Rapport lvl 1*/
+
+SELECT * FROM `Students` WHERE IDStud ='3'
+SELECT * FROM `Students` WHERE IDStud ='6'
+SELECT `Nom`, `Ville` FROM `Students` WHERE IDStud ='1'
+SELECT `Nom` FROM `Students` WHERE IDStud ='2'
+SELECT * FROM `Students` WHERE Ville = 'Paris'
+SELECT `Nom` FROM `Students` WHERE Ville = 'Lyon'
+
+/*Rapport lvl 2*/
+/*Pour l’étudiant.e d’ID 5, récupérer toutes les colonnes sur l’étudiant.e et ses activités favorites*/
+SELECT * FROM `Students` , `Favorite` WHERE IDStud ='5'
+SELECT `Nom`, `Sport` FROM `Students`,`Favorite` WHERE IDStud ='4'
