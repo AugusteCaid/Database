@@ -93,3 +93,4 @@ SELECT `Nom` FROM `Students` WHERE Ville = 'Lyon'
 /*Pour l’étudiant.e d’ID 5, récupérer toutes les colonnes sur l’étudiant.e et ses activités favorites*/
 SELECT * FROM `Students` , `Favorite` WHERE IDStud ='5'
 SELECT `Nom`, `Sport` FROM `Students`,`Favorite` WHERE IDStud ='4'
+
