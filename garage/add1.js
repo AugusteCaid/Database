@@ -35,4 +35,4 @@ const car3 = new Car({
     model: '308',
     year: 2017,
 });
-//car3.save().then(res=> console.log(res)); 
+//car3.save().then(res=> console.log(res));

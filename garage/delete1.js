@@ -15,5 +15,9 @@ console.log('car', carSchema);
 
 const Car = mongoose.model('Car', carSchema);
 
-
-await Car.deleteMany({ brand:'' //, age: { $gte: 18 } });
+Car.deleteMany({ brand: { $gte: 'Renault' } })
+.then(function(){ 
+    console.log("Data deleted"); // Success 
+}).catch(function(error){ 
+    console.log(error); // Failure 
+}); 
