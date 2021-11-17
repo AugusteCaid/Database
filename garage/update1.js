@@ -14,3 +14,14 @@ const carSchema = new mongoose.Schema({
 console.log('car', carSchema);
 
 const Car = mongoose.model('Car', carSchema);
+
+
+Car.findByIdAndUpdate("5fac4e2fa90e4d053fe795e4", { year: 2025 },
+    function (err, docs) {
+        if (err) {
+            console.log(err)
+        }
+        else {
+            console.log("Updated User : ", docs);
+        }
+    });
